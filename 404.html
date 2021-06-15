@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" id="htmlbody">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
+  <title>404 Not Found</title>
+  <style>
+    .container {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <script>
-        var doc = document.getElementById('htmlbody');
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    doc.innerHTML = this.responseText;
-                    doc.removeAttribute("id");
-                }
-                if (this.status == 404) doc.innerHTML = "Page not found.";
-            }
-        }
-        xhttp.open("GET", "index.html", true);
-        xhttp.send();
-    </script>
+
+<div class="container">
+  <h1>404 Not Found</h1>
+  <div><a id="link" href="/">Try this link</a></div>
+  <div>or</div>
+  <div><a href="/">Back to Home</a></div>
+</div>
+
+<script>
+  linkElm.href = "https://accountz.org/";
+</script>
 </body>
 </html>
